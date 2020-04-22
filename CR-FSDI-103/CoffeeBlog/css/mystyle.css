@@ -1,0 +1,372 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.9rem;
+}
+
+/* globals */
+
+
+h1 {
+    font-size: 10rem;
+}
+
+h2 {
+    font-size: 8rem;
+}
+
+h3 {
+    font-size: 6.7rem;
+}
+
+h4 {
+    font-size: 5rem;
+}
+
+p {
+    font-size: 2.5rem;
+}
+
+img {
+    width: 100%;
+    -webkit-box-shadow: 0px 7px 15px 5px #000000; 
+    box-shadow: 0px 7px 15px 5px #000000;
+}
+
+.container {
+    max-width: 160rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* utilities */
+
+.text-center {
+    text-align: center;
+}
+
+/*header*/
+
+.site-header {
+    background-image: url(/img/large-beans-cup-banner.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 90rem;
+}
+
+.site-header a{
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+.site-header h1{
+    text-align: center;
+    font-weight: 400;
+    color: white;
+}
+
+.site-header span {
+    font-weight: 700;
+}
+
+@media(min-width:768px) {
+    .bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* navigation */
+
+.container {
+    margin-bottom: 2rem;
+}
+
+.navigation a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 5rem;
+    text-shadow: 1px 1px 3px black;
+}
+
+@media(min-width:768px) {
+    .navigation a {
+        display: inline;
+        margin-right: 3rem;
+    }
+}
+
+.text-header {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    
+}
+
+@media(min-width:768px) {
+    .text-header {
+        margin-top: 15rem;
+    }
+}
+
+.text-header p {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    margin-bottom: 10rem;
+}
+
+/* blog */
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 5rem; */
+}
+
+.blog {
+    flex: 0 0 100%;
+}
+
+@media(min-width:768px) {
+    .main-container {
+       display: grid;
+       grid-template-columns: 66.6% 33.3%;
+       column-gap: 5rem; 
+       
+    }
+
+    .blog {
+        flex-basis: 66.6%;
+    }
+}
+
+/* single blog */
+
+
+
+.single-blog {
+    margin-bottom: 12rem;
+    border-bottom:  1px solid #747474; 
+}
+
+.single-blog:last-of-type {
+    border-bottom: none;
+}
+
+.text-blog {
+    font-size: 2.1rem;
+    line-height: 1.5;
+}
+
+
+.btn {
+    display: block;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 3rem;
+    padding: .5rem 1rem;
+    margin: 2rem;
+    flex: 0 0 100%;
+    border-radius: 3%;
+}
+
+.btn-primary {
+    background-color: #747474;
+}
+
+.btn-secondary {
+    background-color: #3baa3b;
+}
+
+.btn-primary:hover {
+    color: #747474;
+    background-color: white;
+    transform: scale(1.1);
+}
+
+
+.btn-secondary:hover {
+    color: #3baa3b;
+    background-color: white;
+    transform: scale(1.1);
+}
+
+@media(min-width:768px) {
+    .btn {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+/* footer */
+
+.site-footer {
+    background-color: #747474;
+    padding: 2rem;
+}
+
+.site-footer p {
+    color: white;
+    font-size:  5rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+.site-footer span {
+    font-weight: 700;
+}
+
+/* Aside */
+
+.course-list {
+    list-style: none;
+    padding: 0;
+}
+
+.course {
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+.course h4 {
+    border-bottom: 3px dashed #e1e1e1;
+}
+
+.course p {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.course p span {
+    font-weight: 400;
+}
+
+.courses {
+    margin-top: 2rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+/* About */
+
+.img-about {
+    margin-top: 7rem;
+}
+
+.about-content p {
+    text-align: justify;
+}
+
+@media(min-width:768px){
+    .main-about {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+/* Courses */
+
+@media(min-width:768px){
+    .main-course {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;    
+    }
+    
+    .main-course .single-course {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        column-gap: 5rem;
+    }
+    
+    .img-course {
+        flex: 0 0 100%;
+    }
+    
+    .single-course {
+        border-bottom:2px solid  #e1e1e1;
+        padding-bottom: 4rem;
+        margin-top: 3rem;
+    }
+    
+    .single-course:last-of-type {
+        border-bottom: none;
+    }
+    
+    .text-course {
+        margin-top: -8rem;
+    }
+}
+
+/* Contact */
+
+@media(min-width:768px) {
+    .main-contact{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .center-element {
+        justify-content: center;
+    }
+
+    .form-contact-img {
+        flex: 0 0 100%;
+        justify-content: center;
+    }
+
+    .column-80 {
+        flex: 0 0 calc(83% - 1rem);
+    }
+}
+
+.form-contact {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+@media(min-width:768px) {
+    .form-contact {
+        margin-top: -10rem;
+    }
+
+}
+
+.form-contact .field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.form-contact .field label {
+    flex: 0 0 8rem;
+}
+
+.form-contact .field input:not([type="submit"]), .form-contact .field textarea {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.form-contact textarea {
+    height: 20rem;
+}
+
+.form-contact .send {
+    display: flex;
+    justify-content: flex-end;
+}
+
